@@ -1,0 +1,32 @@
+# Cuenta ovejas en Elm Street
+
+Es medianoche en Elm Street y necesitas dormir urgentemente. Intentas contar ovejas, pero las letras en tu mente están completamente desordenadas por culpa de Freddy.
+
+Tienes una **cadena de texto caótica** con letras mezcladas. Tu único escape es **contar cuántas veces** puedes formar la palabra **"sheep"** (oveja en inglés) antes de que Freddy te atrape en la pesadilla.
+
+## Tu misión
+
+Crear una función `countSheep(letters)` que:
+
+* Reciba un **string** con letras desordenadas.
+* Cuente cuántas veces se puede formar la palabra **"sheep"**.
+* Devuelva el **número de ovejas completas** que puedes contar.
+
+> **Importante:** Para formar `"sheep"` necesitas exactamente: **s, h, e, e, p**
+> (la letra **e** aparece **2 veces**).
+
+## Ejemplos
+
+```js
+countSheep('sheepxsheepy')
+// → 2 (puedes formar "sheep" dos veces)
+
+countSheep('sshhheeeepppp')
+// → 2 (s=2, h=3, e=4, p=4 → solo 2 "sheep" completas)
+
+countSheep('hola')
+// → 0 (no hay suficientes letras)
+
+countSheep('peesh')
+// → 1 (las letras están desordenadas pero están todas)
+```
